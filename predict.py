@@ -8,8 +8,6 @@ device = torch.device("cpu")
 
 
 def generate(name):
-    # If you what to replicate the DeepLog paper results(Actually, I have a better result than DeepLog paper results),
-    # you should use the 'list' not 'set' to obtain the full dataset, I use 'set' just for test and acceleration.
     hdfs = set()
     # hdfs = []
     with open('data/' + name, 'r') as f:
